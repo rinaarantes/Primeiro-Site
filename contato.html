@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Site HTML</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/contato.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libertinus+Serif+Display&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Story+Script&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+  <header class="fixo">
+    <img class="icon" src="img/icon.png">
+    <nav class="menu-opcoes">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#sobre">HTML</a></li>
+        <li><a href="index.html#CSS">CSS</a></li>
+        <li><a href="index.html#galeria">Galeria</a></li>
+        <li><a href="js.html">JavaScript</a></li>
+         
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="img">
+        <a href="https://github.com/rinaarantes">
+          <img src="img/perfil.png" alt="desenho de um gato roxo, foto de perfil"> 
+        </a>
+        <p>GitHub</p>
+      </div>
+
+      <div class="sobre"> <!--Breve apresentação-->
+        <h1>Olá! </h1>
+        <hr>
+        <h4>Trabalho Etec MCM ᗢ </h4>
+        <p class="p1">Sua opinião é muito importante para nós! Queremos melhorar continuamente nosso site e tornar sua experiência cada vez melhor.</p>
+        <p class="p2">Por favor, reserve alguns minutos para responder às perguntas abaixo. Suas respostas sobre satisfação, sugestões de melhorias e comentários gerais nos ajudarão a entender o que está funcionando bem e onde podemos evoluir. Agradecemos pelo seu tempo e colaboração!</p>
+      </div><!--sobre-->
+
+      <div class="form"> <!--Formularioo-->
+        <h1>Formulário de Contato</h1>
+        <p>Entre em contato ou dê sugestões!</p>
+        <div class="fundo">
+          <form>
+            <div class="distancia">
+              <label for="email">Coloque seu Email:</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="distancia">
+              <label for="fname">Nome:</label>
+              <input type="text" id="fname" name="fname">
+              <input type="hidden" id="custId" name="custId" value="3487"><!--nome-->
+            </div>
+
+            <div class="distancia">
+              <label>Assunto:</label>
+              <input type="text"><!--assunto-->
+            </div>
+
+            <div class="distancia"> <!--genero-->
+              <h2>Nota para o Site :D</h2>
+              <input type="radio" id="male" name="Genero" value="male">
+              <label for="male">MB</label>
+              <input type="radio" id="male" name="Genero" value="male">
+              <label for="male">MB</label>
+            </div>
+
+            <div class="distancia"> <!--Linguagens-->
+              <h2>Linguagens que você gostaria que tivesse</h2>
+              <input type="checkbox" name="gender" value="male">
+              <label for="male">Java</label>
+              <input type="checkbox" name="gender" value="male">
+              <label for="male">Python</label>
+              <input type="checkbox" name="gender" value="male">
+              <label for="male">PHP</label>
+              <input type="checkbox" name="gender" value="male">
+              <label for="male">Nenhum</label>
+            </div>
+
+            <div class="distancia"> <!--sastifação-->
+              <label for="cars">Sastisfação com o Site</label>
+              <select id="cars" name="cars"> 
+                <option value="">Muito Bom ᗢ</option>
+                <option value="">Bom</option>
+                <option value="">Ruim</option>
+                <option value="">Muito Ruim ˙◠˙</option>
+              </select>
+            </div>
+
+            <div class="distancia">
+              <input type="image" src="img/enviar.png" alt="submit" width="150" value="Enviar">
+            </div>
+
+          </form>
+        </div> <!--fundo-->
+      </div><!--form-->
+    </div><!--container-->
+  </main>
+</body>
+</html>
